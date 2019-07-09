@@ -1,0 +1,139 @@
+.container{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 4fr;
+    overflow-x: hidden;
+}
+.navigation{
+    grid-column: span 12;
+    background-color: #008040;
+    font-family: 'Quicksand', sans-serif;
+}
+.navigationHolder{
+    position: relative;
+    padding: 30px 0;
+}
+.mainBody{
+    grid-column: span 12;
+    font-family: 'Poiret One', cursive;
+    overflow: scroll;
+}
+.image{
+    width: 100%;
+    height: 150%;
+    position: relative;
+    z-index: 1;
+}
+.mainText{
+    position: relative;
+    z-index: 3;
+    color: black;
+    top: 2px;
+}
+.btnClass{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    cursor: pointer;
+    margin-right: 5px;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    background-color: #008040;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+.doctorInfo{
+    display: flex;
+    margin: 60px auto;
+    width: 80%;
+    height: 300px;
+}
+.doctorImageHolder{
+    width: 30%;
+    height: 300px;
+    margin-right: 50px;
+}
+.doctorImage{
+    width: 100%;
+    height: 100%;
+}
+.bookingDiv{
+    position: relative;
+    left: 0px;
+}
+.bookingBtn{
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Poiret One', cursive;
+    height: 50px;
+    width: 220px;
+    background-color: #008040;
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.bookingForm{
+    margin: auto;
+    border: 1px solid #008040;
+    width: 60%;
+    box-shadow: 2px 2px 10px #008040;
+    
+}
+.time{
+    margin-right: 10px;
+    height: 50px;
+    font-family: 'Poiret One', cursive;
+    background-color: #008040;
+    font-size: 20px;
+    width: 130px;
+    color: white;
+}
+.avlbDateButton{
+    height: 20px;
+    width: 120px;
+    background-color: #008040;
+    border: 0px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-family: 'Poiret One', cursive;
+}
+.avlbDateButton:focus{
+    background-color: blue;
+}
+@media(max-width: 768px){
+    .image{
+        height: 150%;
+        width: 220%;
+    }
+    .btn{
+        margin-top: 10px;
+        width: 230px;
+    }
+    .btnClass{
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctorInfo{
+        flex-direction: column;
+        height: 600px;
+    }
+    .doctorImageHolder{
+        width: 100%;
+    }
+    .bookingBtn{
+        margin-top: 10px;
+    }
+    .bookingForm{
+        width: 95%;
+    }
+}

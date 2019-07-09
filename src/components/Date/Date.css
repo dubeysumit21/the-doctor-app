@@ -1,0 +1,31 @@
+.date{
+    display: flex;
+    justify-content: center;
+}
+.day{
+    margin-right: 10px;
+    height: 25px;
+    font-family: 'Poiret One', cursive;
+    background-color: #008040;
+    font-size: 20px;
+    width: 60px;
+    color: white;
+}
+.month{
+    margin-right: 10px;
+    height: 25px;
+    font-family: 'Poiret One', cursive;
+    background-color: #008040;
+    font-size: 20px;
+    width: 85px;
+    color: white;
+}
+.year{
+    margin-right: 10px;
+    height: 25px;
+    font-family: 'Poiret One', cursive;
+    background-color: #008040;
+    font-size: 20px;
+    width: 60px;
+    color: white;
+}
